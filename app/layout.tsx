@@ -1,16 +1,16 @@
-import type { Metadata } from 'next';
-import { Inter, Geist } from 'next/font/google';
-import './globals.css';
-import NavbarClient from '@/components/layout/NavbarClient';
+import type { Metadata } from "next";
+import { Inter, Geist } from "next/font/google";
+import "./globals.css";
+import NavbarClient from "@/components/layout/NavbarClient";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'WebACSL',
-  description: 'Laboratory Management System',
+  title: "ACSL",
+  description: "Advanced Computing and Systems Laboratory",
 };
 
 export default function RootLayout({
