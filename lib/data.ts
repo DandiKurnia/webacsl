@@ -89,16 +89,70 @@ export const GALLERY_ITEMS: GalleryItem[] = [
 
 export const TEAM_MEMBERS: TeamMember[] = [
   {
-    name: "Budi Santoso",
-    role: "Koordinator Lab",
+    name: "Rizky",
+    role: "Asisten JKD",
     region: "Depok",
-    avatar: "https://i.pravatar.cc/400?u=budi@webacsl.com",
+    avatar: "/images/asisten/rizky.jpg",
   },
   {
     name: "Siti Aminah",
     role: "Asisten JKD",
     region: "Depok",
-    avatar: "https://i.pravatar.cc/400?u=siti@webacsl.com",
+    avatar: "/images/asisten/rizky.jpg",
+  },
+  {
+    name: "Siti Aminah",
+    role: "Asisten JKD",
+    region: "Depok",
+    avatar: "/images/asisten/rizky.jpg",
+  },
+  {
+    name: "Siti Aminah",
+    role: "Asisten JKD",
+    region: "Depok",
+    avatar: "/images/asisten/rizky.jpg",
+  },
+  {
+    name: "Siti Aminah",
+    role: "Asisten JKD",
+    region: "Depok",
+    avatar: "/images/asisten/rizky.jpg",
+  },
+  {
+    name: "Andi Wijaya",
+    role: "Asisten JKL",
+    region: "Kalimalang",
+    avatar: "https://i.pravatar.cc/400?u=andi@webacsl.com",
+  },
+  {
+    name: "Andi Wijaya",
+    role: "Asisten JKL",
+    region: "Kalimalang",
+    avatar: "https://i.pravatar.cc/400?u=andi@webacsl.com",
+  },
+  {
+    name: "Andi Wijaya",
+    role: "Asisten JKL",
+    region: "Kalimalang",
+    avatar: "https://i.pravatar.cc/400?u=andi@webacsl.com",
+  },
+  {
+    name: "Andi Wijaya",
+    role: "Asisten JKL",
+    region: "Kalimalang",
+    avatar: "https://i.pravatar.cc/400?u=andi@webacsl.com",
+  },
+  {
+    name: "Andi Wijaya",
+    role: "Asisten JKL",
+    region: "Kalimalang",
+    avatar: "https://i.pravatar.cc/400?u=andi@webacsl.com",
+  },
+  {
+    name: "Andi Wijaya",
+    role: "Asisten JKL",
+    region: "Kalimalang",
+    avatar: "https://i.pravatar.cc/400?u=andi@webacsl.com",
   },
   {
     name: "Andi Wijaya",

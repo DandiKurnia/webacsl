@@ -1,4 +1,5 @@
 import CardSwap, { Card } from "@/components/CardSwap";
+import Link from "next/link";
 import { GoArrowUpRight } from "react-icons/go";
 
 type HeroImage = {
@@ -86,22 +87,16 @@ export default function HeroSection() {
           </p>
 
           <div className="flex flex-wrap items-center gap-3 pt-1">
-            <a
+            <Link
               href="/laboratories"
-              className="group inline-flex items-center gap-2 rounded-full bg-[#0066FF] px-5 py-3 text-[14px] font-medium text-white shadow-[0_8px_24px_-12px_rgba(0,102,255,0.6)] transition-[transform,box-shadow] duration-200 ease-out hover:-translate-y-0.5 hover:shadow-[0_12px_28px_-12px_rgba(0,102,255,0.7)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0066FF]"
+              className="mt-2 inline-flex w-fit items-center gap-1 text-[13px] font-medium text-[#0066FF] hover:underline"
             >
               Lihat Lab
               <GoArrowUpRight
                 className="size-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                 aria-hidden
               />
-            </a>
-            <a
-              href="#about"
-              className="inline-flex items-center gap-2 rounded-full border border-[#0E1116]/15 px-5 py-3 text-[14px] font-medium text-[#0E1116] transition-colors duration-200 ease-out hover:border-[#0E1116]/35 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0066FF]"
-            >
-              Cara gabung
-            </a>
+            </Link>
           </div>
 
           <dl className="mt-2 flex flex-wrap gap-x-8 gap-y-3 border-t border-[#0E1116]/8 pt-5 text-[13px] text-[#3F4753]">
@@ -125,7 +120,6 @@ export default function HeroSection() {
             cardDistance={40}
             verticalDistance={50}
             delay={4200}
-            pauseOnHover
             skewAmount={4}
             easing="elastic"
             width={460}

@@ -1,7 +1,11 @@
+import Link from "next/link";
+import { GoArrowUpRight } from "react-icons/go";
+
 type FocusArea = {
   code: string;
   name: string;
   desc: string;
+  link: string;
 };
 
 const FOCUS_AREAS: FocusArea[] = [
@@ -9,21 +13,25 @@ const FOCUS_AREAS: FocusArea[] = [
     code: "JKD",
     name: "Jaringan Komputer Dasar",
     desc: "Fondasi konsep jaringan, protokol, dan konektivitas untuk pemula.",
+    link: "https://jkd.acsl.my.id",
   },
   {
     code: "JKL",
     name: "Jaringan Komputer Lanjut",
     desc: "DNS, CMS, E-Mail, Proxy, Firewall dan Konfigurasi Ubuntu Server.",
+    link: "https://jkl.acsl.my.id",
   },
   {
     code: "MCS",
     name: "Mobile Computing System",
     desc: "Pengembangan aplikasi Android dengan Flutter.",
+    link: "https://mcs.acsl.my.id",
   },
   {
     code: "FPGA",
     name: "Field Programmable Gate Array",
     desc: "Perancangan logika digital dan sistem hardware.",
+    link: "https://fpga.acsl.my.id",
   },
 ];
 
@@ -108,7 +116,7 @@ export function AboutSection() {
         <div className="mt-16 lg:mt-24">
           <div className="flex items-baseline justify-between gap-4 border-b border-[#0E1116]/10 pb-4">
             <h3 className="text-[13px] font-medium uppercase tracking-[0.14em] text-[#0E1116]">
-              Fokus Praktikum
+              Mata Praktikum
             </h3>
             <span className="font-mono text-[12px] text-[#0E1116]/45">
               4 mata pelajaran
@@ -135,6 +143,18 @@ export function AboutSection() {
                 <span className="text-[13.5px] leading-[1.55] text-[#3F4753]">
                   {area.desc}
                 </span>
+                <Link
+                  href={area.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-flex w-fit items-center gap-1 text-[13px] font-medium text-[#0066FF] hover:underline"
+                >
+                  Pelajari lebih lanjut
+                  <GoArrowUpRight
+                    className="size-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                    aria-hidden
+                  />
+                </Link>
               </li>
             ))}
           </ul>

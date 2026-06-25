@@ -26,14 +26,17 @@ export function TeamSection() {
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div className="flex flex-col gap-5">
             <span className="inline-flex w-fit items-center gap-2 font-mono text-[11px] uppercase tracking-[0.22em] text-[#0066FF]">
-              <span aria-hidden className="size-1.5 rounded-full bg-[#0066FF]" />
+              <span
+                aria-hidden
+                className="size-1.5 rounded-full bg-[#0066FF]"
+              />
               Tim Asisten
             </span>
             <h2
               id="team-heading"
               className="max-w-[18ch] text-balance text-[clamp(1.9rem,4vw,3rem)] font-semibold leading-[1.06] tracking-[-0.04em] text-[#0E1116]"
             >
-              Orang-orang di balik praktikum.
+              Orang-orang ACSL
             </h2>
           </div>
           <Link

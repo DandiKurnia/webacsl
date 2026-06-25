@@ -98,6 +98,34 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Hide scrollbar on horizontal carousels while keeping native scroll/swipe */
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/legacy Edge */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* WebKit */
+}
+
+/* Region roster — soften both edges of the horizontal auto-scroller so cards
+   drift in and out instead of hard-cutting at the viewport edge. */
+.acsl-fade-x {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 6%,
+    #000 94%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 6%,
+    #000 94%,
+    transparent
+  );
+}
+
 /* Ensure proper stacking for fixed navbar */
 main {
   position: relative;
