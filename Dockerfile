@@ -48,7 +48,7 @@ COPY --from=builder --chown=nextjs:nodejs /app/public ./public
 # Copy Prisma files
 COPY --from=builder --chown=nextjs:nodejs /app/prisma ./prisma
 COPY --from=builder --chown=nextjs:nodejs /app/prisma.config.ts ./prisma.config.ts
-COPY --from=builder --chown=nextjs:nodejs /app/app/generated/prisma ./app/generated/prisma
+COPY --from=builder --chown=nextjs:nodejs /app/generated/prisma ./generated/prisma
 
 # Fix permission for Next.js cache
 RUN mkdir -p /app/.next/cache && chown -R nextjs:nodejs /app/.next
