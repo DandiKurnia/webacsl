@@ -1,6 +1,4 @@
 import CardSwap, { Card } from "@/components/CardSwap";
-import Link from "next/link";
-import { GoArrowUpRight } from "react-icons/go";
 import { prisma } from "@/lib/prisma";
 import ScrollReveal from "@/components/ScrollReveal";
 

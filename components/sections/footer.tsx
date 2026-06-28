@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { GoArrowUpRight } from "react-icons/go";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const NAV_GROUPS: {

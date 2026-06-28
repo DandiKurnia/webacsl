@@ -55,3 +55,5 @@ generated/
 /.playwright-mcp/
 /prompt/
 skills-lock.json
+
+docker-compose.prod.yml
