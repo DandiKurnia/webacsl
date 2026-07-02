@@ -19,7 +19,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "acsl.my.id",
+        hostname: "acsl.dabildad.my.id",
         pathname: "/**",
       },
     ],
